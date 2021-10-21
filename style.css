@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    font-size: 4em;
+    z-index: 5;
+    position: relative;
+    top: 50%;
+    left: 4rem;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Header */
+
+header {
+    background-color: black;
+    display: flex;
+    height: 64px;
+    width: 100%;
+    color: whitesmoke;
+    align-items: center;
+    padding: 0px 4em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo-text {
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul.nav {
+    text-align: end;
+    align-content: flex-end;
+    cursor: pointer;
+}
+
+li.nav-item {
+    display: inline;
+    padding-left: 24px;
+    user-select: none;9
+}
+
+
+
+/* Section Banner */
+section.banner {
+    color: whitesmoke;
+    display: inline-block;
+    width: 100%;
+    height: 440px;
+    background-image: url("./resources/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    overflow: hidden;
+    
+}
+
+.banner-overlay {
+    width: 100%;
+    height: 440px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.mission {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+
+p.mission-statement {
+    z-index: 5;
+    padding-top: 24px;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 4rem;
+}
+
+p.portofolio-statement {
+    margin-top: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Portofolio section */
+
+section.portofolio {
+    padding: 4rem;
+}
+
+.portofolio-boxes {
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+    display: flex;
+    gap: 1.5em;
+}
+
+.portofolio-item-box {
+    height: 340px;
+    width: auto;
+    margin-bottom: 24px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+img.portofolio-item-img {
+    height: 100%;
+    width: 100%;
+}
+
+.portofolio-item-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    bottom: 21%;
+}
+
+
+/* Team section */
+section.team {
+    padding: 1rem 4rem;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.team-boxes {
+    /* width: 1920px; */
+    width: 100%;
+    margin-top: 64px;
+    height: 548px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.team-item-box {
+    display: inline-block;
+    position: relative;
+    flex-flow: row wrap;
+    width: 360px;
+    cursor: pointer;
+
+}
+
+img.team-item-img {
+    height: 548px;
+    width: auto;
+}
+
+.team-item-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    bottom: 164px;
+}
+
+.team-member-name {
+    font-size: 2em;
+}
+
+.team-member-position {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+
+/* Footer Section */
+.footer-contact {
+    text-align: center;
+    padding: 4em;
+    margin-top: 4em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+    height: 160px;
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+    padding: 4em;
+    margin-top: 8em;
+}
